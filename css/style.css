@@ -1,0 +1,44 @@
+.carousel-caption > h1 {
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.671);
+  display: inline-block;
+}
+.carousel-caption > p {
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.671);
+  display: inline-block;
+}
+
+#cource_carousel1 {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+}
+
+#cource_carousel1 > .carousel-inner{
+  height: 300px;
+  width: 300px;
+}
+
+#cource_carousel2 {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+}
+
+#cource_carousel2 > .carousel-inner{
+  height: 300px;
+  width: 300px;
+}
+
+#cource_carousel3 {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+}
+
+#cource_carousel3 > .carousel-inner{
+  height: 300px;
+  width: 300px;
+}
+
