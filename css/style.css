@@ -1,44 +1,41 @@
+body {
+  opacity: 90%;
+}
+
+a {
+  cursor: pointer;
+  color: rgb(182, 180, 180);
+}
+
+a:hover h2{
+  color: rgba(255, 255, 255, 0.868);
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+
 .carousel-caption > h1 {
-  padding: 3px;
+  padding: 12px;
   background-color: rgba(0, 0, 0, 0.671);
   display: inline-block;
+  border-radius: 10px;
 }
 .carousel-caption > p {
-  padding: 3px;
+  padding: 12px;
   background-color: rgba(0, 0, 0, 0.671);
   display: inline-block;
+  border-radius: 10px;
 }
 
-#cource_carousel1 {
-  height: 300px;
-  width: 300px;
+.cource_carousel {
+  height: 350px;
+  width: 350px;
   margin: auto;
 }
 
-#cource_carousel1 > .carousel-inner{
-  height: 300px;
-  width: 300px;
+.cource_carousel > div{
+  height: 350px;
+  width: 350px;
 }
-
-#cource_carousel2 {
-  height: 300px;
-  width: 300px;
-  margin: auto;
-}
-
-#cource_carousel2 > .carousel-inner{
-  height: 300px;
-  width: 300px;
-}
-
-#cource_carousel3 {
-  height: 300px;
-  width: 300px;
-  margin: auto;
-}
-
-#cource_carousel3 > .carousel-inner{
-  height: 300px;
-  width: 300px;
-}
-
