@@ -3,20 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.84.0">
   <title>イタリアンCIT</title>
-
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
-
+  
   <!-- Bootstrap css-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <link href="css/carousel.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="text-light bg-dark mx-auto">
+<body class="mt-xxl-5 text-light bg-dark mx-auto w-100">
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark border-bottom border-secondary">
       <div class="container-fluid">
@@ -39,10 +34,10 @@
               <a class="nav-link" href="#cource">コース</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#menu">メニュー</a>
+              <a class="nav-link" href="#menu">料理一覧</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#access">アクセス</a>
+              <a class="nav-link" href="#access">店舗情報</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">お問い合わせ</a>
@@ -53,7 +48,7 @@
     </nav>
   </header>
 
-  <main class="col-xxl-9 mt-xxl-5 mx-xxl-auto">
+  <main class="col-xxl-8 mt-xxl-5 mx-xxl-auto">
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -63,7 +58,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/内装2.jpg" alt="">
+          <img src="images/内装2.jpg">
           <div class="container">
             <div class="carousel-caption">
               <h1>『普段使いの気取らない贅沢しませんか？』</h1>
@@ -189,10 +184,10 @@
 
     <!--コース-->
     <div id="cource" class="container marketing">
-      <h2 class="mb-5 featurette-heading text-center mt-0">Cource</h2>
+      <h2 class="mb-5 featurette-heading text-center mt-0">コース</h2>
       <div class="row">
         <!--カジュアルコース-->
-        <div class="col-lg-4">
+        <div class="col-xl-4 text-center mb-3">
           <div id="cource_carousel1" class="cource_carousel carousel slide mb-3" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active h-100">
@@ -219,25 +214,28 @@
             <h2>カジュアルコース</h2>
           </a>
           <div class="modal fade mt-5" id="casualCourceModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
-            <div class="modal-lg modal-dialog modal-dialog-scrollable">
+            <div class="modal-xl modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header bg-dark text-light">
                   <h5 class="modal-title" id="staticBackdropLabel">カジュアルコース</h5>
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-dark">
-                  <ul class="px-0 mx-auto d-flex justify-content-around">
+                  <ul class="px-0 mx-auto d-flex flex-column flex-lg-row justify-content-lg-around">
                     <li class="mb-5">
                       <h3>ドリンク</h3>
-                      <img src="images/わいん３.jpg" class="w-100">
+                      <img src="images/わいん３.jpg" height="400" class="w-100">
+                      <p class="fs-4">カジュアルワイン</p>
                     </li>
-                    <li class="mb-5 mx-5">
+                    <li class="mb-5 px-lg-3">
                       <h3>肉料理</h3>
-                      <img src="images/国産牛ステーキ.jpg" class="w-100">
+                      <img src="images/国産牛ステーキ.jpg" height="400" class="w-100">
+                      <p class="fs-4">国産牛ステーキ</p>
                     </li>
                     <li class="mb-5">
                       <h3>サラダ</h3>
-                      <img src="images/フレッシュなサラダ.jpg" class="w-100">
+                      <img src="images/フレッシュなサラダ.jpg" height="400" class="w-100">
+                      <p class="fs-4">フレッシュなサラダ</p>
                     </li>
                   </ul>
                 </div>
@@ -250,7 +248,7 @@
         </div>
 
         <!--スタンダードコース-->
-        <div class="col-lg-4">
+        <div class="col-xl-4 text-center mb-3">
           <div id="cource_carousel2" class="cource_carousel carousel slide mb-3" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active h-100">
@@ -260,7 +258,7 @@
                 <img src="images/国産牛ステーキ（イチボ）.jpg" class="d-block h-100" alt="...">
               </div>
               <div class="carousel-item h-100">
-                <img src="images/パテドカンパーニュ.jpg" class="d-block h-100" alt="...">
+                <img src="images/こだわり２.jpg" class="d-block h-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#cource_carousel2" data-bs-slide="prev">
@@ -277,25 +275,28 @@
             <h2>スタンダードコース</h2>
           </a>
           <div class="modal fade mt-5" id="standardCourceModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-lg modal-dialog modal-dialog-scrollable">
+            <div class="modal-xl modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header bg-dark text-light">
                   <h5 class="modal-title" id="staticBackdropLabel">スタンダードコース</h5>
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-dark">
-                  <ul class="px-0 mx-auto d-flex justify-content-around" style="height: 300px;">
+                  <ul class="px-0 mx-auto d-flex flex-column flex-lg-row justify-content-lg-around">
                     <li class="mb-5">
                       <h3>ドリンク</h3>
-                      <img src="images/ワイン.jpg" class="w-100 h-100">
+                      <img src="images/ワイン.jpg" height="400" class="w-100">
+                      <p class="fs-4">スタンダードワイン</p>
                     </li>
-                    <li class="mb-5 mx-3">
+                    <li class="mb-5 px-lg-3">
                       <h3>肉料理</h3>
-                      <img src="images/国産牛ステーキ（イチボ）.jpg" class="w-100 h-100">
+                      <img src="images/国産牛ステーキ（イチボ）.jpg" height="400" class="w-100">
+                      <p class="fs-4">国産牛ステーキ（イチボ）</p>
                     </li>
                     <li class="mb-5">
                       <h3>サラダ</h3>
-                      <img src="images/パテドカンパーニュ.jpg" class="w-100 h-100">
+                      <img src="images/こだわり２.jpg" height="400" class="w-100">
+                      <p class="fs-4">タコサラダ</p>
                     </li>
                   </ul>
                 </div>
@@ -307,7 +308,7 @@
         </div>
 
         <!--プレミアムコース-->
-        <div class="col-lg-4">
+        <div class="col-xl-4 text-center mb-3">
           <div id="cource_carousel3" class="cource_carousel carousel slide mb-3" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active h-100">
@@ -334,25 +335,28 @@
             <h2>プレミアムコース</h2>
           </a>
           <div class="modal fade mt-5" id="premiumCourceModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-lg modal-dialog modal-dialog-scrollable">
+            <div class="modal-xl modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header bg-dark text-light">
                   <h5 class="modal-title" id="staticBackdropLabel">プレミアムコース</h5>
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-dark">
-                  <ul class="px-0 mx-auto d-flex justify-content-around" style="height: 300px;">
+                  <ul class="px-0 mx-auto d-flex flex-column flex-lg-row justify-content-lg-around">
                     <li class="mb-5">
                       <h3>ドリンク</h3>
-                      <img src="images/ワイン２.jpg" class="w-100 h-100">
+                      <img src="images/ワイン２.jpg" height="400" class="w-100">
+                      <p class="fs-4">プレミアムワイン</p>
                     </li>
-                    <li class="mb-5 mx-3">
+                    <li class="mb-5 px-lg-3">
                       <h3>肉料理</h3>
-                      <img src="images/鴨むね肉のローストオレンジソース.jpg" class="w-100 h-100">
+                      <img src="images/鴨むね肉のローストオレンジソース.jpg" height="400" class="w-100">
+                      <p class="fs-4">鴨むね肉のローストオレンジソース</p>
                     </li>
                     <li class="mb-5">
                       <h3>サラダ</h3>
-                      <img src="images/トマトとモッツァレラチーズ.jpg" class="w-100 h-100">
+                      <img src="images/トマトとモッツァレラチーズ.jpg" height="400" class="w-100">
+                      <p class="fs-4">トマトとモッツァレラチーズ</p>
                     </li>
                   </ul>
                 </div>
@@ -369,113 +373,168 @@
 
     <!--メニュー-->
     <div class="row mx-5">
-      <h2 class="featurette-heading mb-5 mt-0 text-center font-monospace">Menu</h2>
+      <h2 class="featurette-heading mb-5 mt-0 text-center font-monospace">料理一覧</h2>
+      
       <div class="col-lg-10 mx-auto">
-        
         <!--ドリンク-->
-        <div class="mt-5">
-          <h2 class="mb-3">ドリンク</h2>
+        <div class="my-5">
+          <h3 class="mb-3">ドリンク</h3>
           <ul class="d-flex overflow-auto p-1">
             <li class="mx-3">
+              <img src="images/クラフトビール.jpg" width="200" height="200" alt="">
+              <p class="text-center">
+                クラフトビール<br>
+                <span class="border-bottom">300円</span>
+              </p>
+            </li>
+            <li class="mx-3">
               <img src="images/わいん３.jpg" width="200" height="200" alt="">
-              <p class="text-center">カジュアルワイン</p>
+              <p class="text-center">
+                カジュアルワイン<br>
+                <span class="border-bottom">500円</span>
+              </p>
             </li>
             <li class="mx-3">
               <img src="images/ワイン.jpg" width="200" height="200" alt="">
-              <p class="text-center">スタンダードワイン</p>
+              <p class="text-center">
+                スタンダードワイン<br>
+                <span class="border-bottom">700円</span>
+              </p>
             </li>
             <li class="mx-3">
               <img src="images/ワイン２.jpg" width="200" height="200" alt="">
-              <p class="text-center">プレミアムワイン</p>
+              <p class="text-center">
+                プレミアムワイン<br>
+                <span class="border-bottom">1000円</span>
+              </p>
             </li>
             <li class="mx-3">
               <img src="images/こだわり２または４.jpg" width="200" height="200" alt="">
-              <p class="text-center">グラスワイン</p>
-            </li>
-            <li class="mx-3">
-              <img src="images/クラフトビール.jpg" width="200" height="200" alt="">
-              <p class="text-center">クラフトビール</p>
+              <p class="text-center">
+                グラスワイン<br>
+                <span class="border-bottom">1500円</span>
+              </p>
             </li>
           </ul>
         </div>
 
         <!--サラダ-->
         <div class="mb-5">
-          <h2 class="mb-3">サラダ</h2>
+          <h3 class="mb-3">サラダ</h3>
           <ul class="d-flex flex-nowrap overflow-auto p-1">
             <li class="mx-3">
               <img src="images/トマトとモッツァレラチーズ.jpg" width="200" height="200" alt="">
-              <p class="text-center">トマトとモッツァレラチーズ</p>
-            </li>
-            <li class="mx-3">
-              <img src="images/パテドカンパーニュ.jpg" width="200" height="200" alt="">
-              <p class="text-center">パテドカンパーニュ</p>
+              <p class="text-center">
+                トマトとモッツァレラチーズ<br>
+                <span class="border-bottom">400円</span>
+              </p>
             </li>
             <li class="mx-3">
               <img src="images/こだわり２.jpg" width="200" height="200" alt="">
-              <p class="text-center">タコのサラダ</p>
+              <p class="text-center">
+                タコのサラダ<br>
+                <span class="border-bottom">400円</span>
+              </p>
             </li>
             <li class="mx-3">
               <img src="images/フレッシュなサラダ.jpg" width="200" height="200" alt="">
-              <p class="text-center">フレッシュなサラダ</p>
+              <p class="text-center">
+                フレッシュなサラダ<br>
+                <span class="border-bottom">400円</span>
+              </p>
             </li>
             <li class="mx-3">
               <img src="images/namahamu.jpg" width="200" height="200" alt="">
-              <p class="text-center">生ハムサラダ</p>
+              <p class="text-center">
+                生ハムサラダ<br>
+                <span class="border-bottom">600円</span>
+              </p>
             </li>
           </ul>
         </div>
         
         <!--肉料理-->
         <div class="mb-5">
-          <h2 class="mb-3">肉料理</h2>
+          <h3 class="mb-3">肉料理</h3>
           <ul class="d-flex flex-nowrap overflow-auto p-1">
             <li class="mx-3">
               <img src="images/国産牛ステーキ.jpg" width="200" height="200" alt="">
-              <p class="text-center">国産牛ステーキ</p>
+              <p class="text-center">
+                国産牛ステーキ<br>
+                <span class="border-bottom">800円</span>
+              </p>
             </li>
             <li class="mx-3">
               <img src="images/国産牛ステーキ（イチボ）.jpg" width="200" height="200" alt="">
-              <p class="text-center">国産牛ステーキ(イチボ)</p>
+              <p class="text-center">
+                国産牛ステーキ(イチボ)<br>
+                <span class="border-bottom">1000円</span>
+              </p>
             </li>
             <li class="mx-3">
               <img src="images/国産業ステーキ２.jpg" width="200" height="200" alt="">
-              <p class="text-center">国産牛ステーキ2</p>
+              <p class="text-center">
+                国産牛ステーキ2<br>
+                <span class="border-bottom">1200円</span>
+              </p>
             </li>
             <li class="mx-3">
-              <img src="images/国産牛ローストビーフオニオンソース.jpg" width="200" height="200" alt="">
-              <p class="text-center">国産牛ローストビーフオニオンソース</p>
+              <img src="images/国産牛ローストビーフオニオンソース.jpg" width="220" height="200" alt="">
+              <p class="text-center">
+                国産牛ローストビーフオニオンソース<br>
+                <span class="border-bottom">1300円</span>
+              </p>
             </li>
             <li class="mx-3">
               <img src="images/豚カシラ肉の柔らかグリル.jpg" width="200" height="200" alt="">
-              <p class="text-center">豚カシラ肉の柔らかグリル</p>
+              <p class="text-center">
+                豚カシラ肉の柔らかグリル<br>
+                <span class="border-bottom">2000円</span>
+              </p>
             </li>
             <li class="mx-3">
               <img src="images/鴨むね肉のローストオレンジソース.jpg" width="200" height="200" alt="">
-              <p class="text-center">鴨むね肉のローストオレンジソース</p>
+              <p class="text-center">
+                鴨むね肉のローストオレンジソース
+                <span class="border-bottom">2000円</span>
+              </p>
             </li>
           </ul>
         </div>
         
-        <div class="">
-          <h2 class="mb-3">その他料理</h2>
+        <!--その他-->
+        <div>
+          <h3 class="mb-3">その他料理</h3>
           <ul class="d-flex flex-nowrap overflow-auto p-1">
             <li class="mx-3">
-              <img src="images/こだわり５ (2).jpg" width="200" height="200" alt="">
-              <p class="text-center">4種のチーズ</p>
-            </li>
-            <li class="mx-3">
-              <img src="images/絶品アヒージョ人気メニュ０.jpg" width="200" height="200" alt="">
-              <p class="text-center">アヒージョ</p>
+              <img src="images/お通しのパンとオリーブオイル.jpg" width="200" height="200" alt="">
+              <p class="text-center">
+                オリーブオイルとパン<br>
+                <span class="border-bottom">300円</span>
+              </p>
             </li>
             <li class="mx-3">
               <img src="images/ガーリックトーストとワイン.jpg" width="200" height="200" alt="">
-              <p class="text-center">ガーリックトースト</p>
+              <p class="text-center">
+                ガーリックトースト<br>
+                <span class="border-bottom">500円</span>
+              </p>
             </li>
             <li class="mx-3">
-              <img src="images/お通しのパンとオリーブオイル.jpg" width="200" height="200" alt="">
-              <p class="text-center">オリーブオイルとパン</p>
+              <img src="images/絶品アヒージョ人気メニュ０.jpg" width="200" height="200" alt="">
+              <p class="text-center">
+                アヒージョ<br>
+                <span class="border-bottom">600円</span>
+              </p>
             </li>
+            <li class="mx-3">
+              <img src="images/こだわり５ (2).jpg" width="200" height="200" alt="">
+              <p class="text-center">
+                4種のチーズ<br>
+                <span class="border-bottom">700円</span>
+              </p>
+            </li>
+            
           </ul>
         </div>  
       </div>
@@ -486,7 +545,7 @@
 
     <!--アクセス-->
     <div class="px-5 text-center">
-      <h2 class="featurette-heading mb-5 mt-0 text-center font-monospace">Access</h2>
+      <h2 class="featurette-heading mb-5 mt-0 text-center font-monospace">店舗情報</h2>
       <div class="row mx-5">
         <div class="col-md-5 mb-4">
           <div class="mx-lg-5">
@@ -508,7 +567,7 @@
 
     <!--お問い合わせ-->
     <div class="px-5 mx-lg-5 ">
-      <h2 class="featurette-heading mb-5 mt-0 text-center font-monospace">Contact</h2>
+      <h2 class="featurette-heading mb-5 mt-0 text-center font-monospace">お問い合わせ</h2>
       <div class="row">
         <form onsubmit="alert('送信しました')" class="col-lg-7 mx-auto">
           <div class="mb-3">
@@ -529,28 +588,16 @@
 
   <hr class="featurette-divider mb-4">
 
-  <footer class="container mb-4 mx-3">
-    <h2 class="">
+  <footer class="container mb-4 mx-0">
+    <p class="float-end font-monospace fs-5"><a href="#">↑Top</a></p>
+    <div class="px-3 navbar-brand mb-1">
       <img src="images/logo.png" width="50" class="">
       イタリアンCIT
-    </h2>
+    </div>
+    <p class="mx-3">&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
-  
-  <script>
-    // 選択されたナビゲーションリンクにactiveクラスを付与
-    const nav_links = document.querySelectorAll(".nav-link")
-    window.addEventListener('hashchange', () => {
-      nav_links.forEach(link => {
-        const hash = '#'+link.href.split("#")[1]
-        if(hash == location.hash) {
-          link.classList.add('active')
-        }else {
-          link.classList.remove('active')
-        }
-      })  
-    })
-  </script>
+
   <!--Bootstrap js-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
